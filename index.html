@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🎬 Cinema Hub</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#book">Book Tickets</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Cinema Hub</h1>
+      <p>Book blockbuster movies, enjoy premium cinema experience, and reserve your seats instantly.</p>
+      <a href="#book" class="btn">Explore Movies</a>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" placeholder="Search your favorite movie..." />
+    <button>Search</button>
+  </section>
+
+  <!-- Movies Section -->
+  <section class="movies" id="movies">
+    <h2>Now Showing</h2>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="https://images.news18.com/ibnlive/uploads/2025/12/Dhurandhar-2-2025-12-70ea0438f4942e7226847a93e05f76b2.webp" alt="Dhurandar" />
+        <h3>Dhurandar: The Revenge</h3>
+        <p><strong>Genre:</strong> Action / Thriller</p>
+        <p><strong>Duration:</strong> 2h 25m</p>
+        <p>A power-packed action entertainer full of suspense and heroic battles.</p>
+        <a class="btn small" href="#book">Book Ticket</a>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDZmZTlmNDAtZGM4MS00MmVkLWEzMjEtMmNlOWI0ZjIzYzlhXkEyXkFqcGc@._V1_.jpg" alt="Yudh" />
+        <h3>Youth</h3>
+        <p><strong>Genre:</strong> Love / Comedy</p>
+        <p><strong>Duration:</strong> 2h 40m</p>
+        <p>An epic love story of courage, sacrifice, and battlefield glory.</p>
+        <a class="btn small" href="#book">Book Ticket</a>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://cdn.district.in/movies-assets/images/cinema/Bhooth-235a2dc0-3706-11f1-9c5b-6bf254b5f8b5.jpg" alt="Bhooth Bangla" />
+        <h3>Bhooth Bangla</h3>
+        <p><strong>Genre:</strong> Horror / Mystery</p>
+        <p><strong>Duration:</strong> 2h 10m</p>
+        <p>A haunted mansion with terrifying secrets hidden within its walls.</p>
+        <a class="btn small" href="#book">Book Ticket</a>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://vice-press.com/cdn/shop/files/the-mummy-1999-james-bousema-movie-poster.jpg?v=1719235456&width=1024" alt="The Mummy" />
+        <h3>The Mummy</h3>
+        <p><strong>Genre:</strong> Adventure / Fantasy</p>
+        <p><strong>Duration:</strong> 2h 05m</p>
+        <p>An ancient curse awakens, unleashing chaos and thrilling adventures.</p>
+        <a class="btn small" href="#book">Book Ticket</a>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BZmEwNTU4MzEtY2Y4Ni00ZWRmLThhMGMtMDE5MTZmMDIzMGVjXkEyXkFqcGc@._V1_.jpg" alt="Raja Shivaji" />
+        <h3>Raja Shivaji</h3>
+        <p><strong>Genre:</strong> Historical / Action</p>
+        <p><strong>Duration:</strong> 2h 50m</p>
+        <p>The inspiring journey of the great Maratha warrior king.</p>
+        <a class="btn small" href="#book">Book Ticket</a>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- Booking Section (HTML/CSS only demo) -->
+  <section class="booking" id="book">
+    <div class="booking-wrap">
+      <h2>Book Tickets</h2>
+      <p class="booking-sub">Pick your movie, choose a showtime, select seats, and confirm.</p>
+
+      <div class="booking-grid">
+        <div class="booking-steps">
+          <div class="step">
+            <h3>1) Select Movie</h3>
+            <div class="pill-row" role="group" aria-label="Movie selection">
+              <label class="pill">
+                <input type="radio" name="movie" checked />
+                <span>Dhurandar: The Revenge</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="movie" />
+                <span>Yudh</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="movie" />
+                <span>Bhud Bangla</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="movie" />
+                <span>The Mummy</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>2) Select Showtime</h3>
+            <div class="pill-row" role="group" aria-label="Showtime selection">
+              <label class="pill">
+                <input type="radio" name="show" checked />
+                <span>10:30 AM</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="show" />
+                <span>1:15 PM</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="show" />
+                <span>4:00 PM</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="show" />
+                <span>7:45 PM</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>3) Choose Seats</h3>
+            <div class="screen">SCREEN</div>
+
+            <!-- Visual-only seat layout; no JS interactivity -->
+            <div class="seat-grid" aria-label="Seat layout">
+              <div class="seat blocked"></div><div class="seat">A1</div><div class="seat">A2</div><div class="seat blocked"></div><div class="seat selected">A4</div><div class="seat selected">A5</div><div class="seat blocked"></div>
+              <div class="seat">B1</div><div class="seat">B2</div><div class="seat">B3</div><div class="seat blocked"></div><div class="seat">B5</div><div class="seat">B6</div><div class="seat">B7</div>
+              <div class="seat blocked"></div><div class="seat">C1</div><div class="seat">C2</div><div class="seat">C3</div><div class="seat">C4</div><div class="seat">C5</div><div class="seat blocked"></div>
+              <div class="seat">D1</div><div class="seat">D2</div><div class="seat">D3</div><div class="seat">D4</div><div class="seat blocked"></div><div class="seat selected">D6</div><div class="seat selected">D7</div>
+            </div>
+
+            <div class="legend">
+              <span class="legend-item"><i class="seat"></i> Available</span>
+              <span class="legend-item"><i class="seat blocked"></i> Unavailable</span>
+              <span class="legend-item"><i class="seat selected"></i> Selected</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="booking-summary">
+          <h3>Booking Summary</h3>
+
+          <div class="summary-card">
+            <div class="row"><span>Movie</span><strong>Dhurandar: The Revenge</strong></div>
+            <div class="row"><span>Showtime</span><strong>10:30 AM</strong></div>
+            <div class="row"><span>Seats</span><strong>4 seats</strong></div>
+            <div class="row"><span>Ticket Price</span><strong>₹ 240</strong></div>
+            <hr />
+            <div class="row"><span>Subtotal</span><strong>₹ 960</strong></div>
+            <div class="row"><span>Taxes (18%)</span><strong>₹ 173</strong></div>
+            <div class="row total"><span>Total</span><strong>₹ 1133</strong></div>
+
+            <div class="note">Demo UI: seat selection and price are visual only (no JS).</div>
+
+            <div class="cta-row">
+              <a class="btn full" href="#">Confirm Booking</a>
+              <a class="btn ghost full" href="#movies">Change Options</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="offers">
+    <h2>Special Offers</h2>
+    <p>🔥 Get 20% OFF on weekend bookings | 🎯 Free popcorn on premium seats</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Cinema Hub | Book Movies Anytime | Designed for Movie Lovers 🎥</p>
+  </footer>
+</body>
+</html>
+

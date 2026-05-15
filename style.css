@@ -1,0 +1,491 @@
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+                url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?fm=jpg&q=80&w=1920') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px black;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 10px;
+}
+
+.search-section input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-section button {
+    padding: 12px 20px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-section button:hover {
+    background: white;
+}
+
+/* Movies Section */
+.movies {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.movies h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffcc00;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Movie Cards */
+.movie-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.4);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 15px 0 10px;
+    color: #ffcc00;
+    font-size: 1.4rem;
+}
+
+.movie-card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.movie-card button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.movie-card button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Offers Section */
+.offers {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 204, 0, 0.08);
+    margin-top: 40px;
+}
+
+.offers h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.offers p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.95);
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+/* Booking Section */
+.booking {
+    padding: 60px 40px;
+    margin-top: 10px;
+}
+
+.booking-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.booking h2 {
+    font-size: 2.4rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.booking-sub {
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.booking-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.step {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 204, 0, 0.15);
+    border-radius: 16px;
+    padding: 18px;
+    backdrop-filter: blur(10px);
+}
+
+.step h3 {
+    color: #ffcc00;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 204, 0, 0.25);
+    background: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    user-select: none;
+}
+
+.pill input {
+    accent-color: #ffcc00;
+}
+
+.screen {
+    margin: 10px 0 18px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgba(255, 204, 0, 0.9);
+    background: rgba(255, 204, 0, 0.08);
+    border: 1px solid rgba(255, 204, 0, 0.18);
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 14px;
+}
+
+.seat {
+    width: 38px;
+    height: 28px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat.blocked {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.08);
+    color: transparent;
+}
+
+.seat.selected {
+    background: rgba(255, 204, 0, 0.35);
+    border-color: rgba(255, 204, 0, 0.7);
+    box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
+    color: #fff;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    opacity: 0.95;
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.legend-item .seat {
+    width: 18px;
+    height: 14px;
+    border-radius: 4px;
+    font-size: 0;
+}
+
+.booking-summary {
+    position: sticky;
+    top: 110px;
+}
+
+.booking-summary h3 {
+    color: #ffcc00;
+    margin-bottom: 12px;
+}
+
+.summary-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 204, 0, 0.18);
+    border-radius: 16px;
+    padding: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.summary-card .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+.summary-card strong {
+    color: #fff;
+}
+
+.summary-card .total strong {
+    color: #ffcc00;
+    font-size: 1.15rem;
+}
+
+.summary-card hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin: 12px 0;
+}
+
+.note {
+    margin: 12px 0 14px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.cta-row {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn.small {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+}
+
+.btn.full {
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+.btn.ghost {
+    background: rgba(255, 204, 0, 0.12);
+    border: 1px solid rgba(255, 204, 0, 0.35);
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media(max-width: 992px) {
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-summary {
+        position: static;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-section input {
+        width: 80%;
+    }
+
+    .movie-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking {
+        padding: 40px 16px;
+    }
+
+    .seat-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+
